@@ -2,24 +2,22 @@ window.onload = () => {
 
   const intro = document.getElementById("intro");
 
-  // 1) intro oynar
-  // 2) sonra MAIN blur'dan açılır
-
+  // body loaded efekti
   setTimeout(() => {
     document.body.classList.add("loaded"); 
   }, 120);
 
-  // intro kapanış
-  setTimeout(() => {
-    intro.classList.add("hide");
-  }, 3500);
-
+  // intro varsa kapat
+  if (intro) {
+    setTimeout(() => {
+      intro.classList.add("hide");
+    }, 3500);
+  }
 };
 
 /* NAV */
 
-function goInfo(){
-
+function goInfo() {
   document.body.style.transition = "0.6s ease";
   document.body.style.opacity = "0";
   document.body.style.filter = "blur(20px)";
@@ -29,6 +27,6 @@ function goInfo(){
   }, 500);
 }
 
-function goServices(){
-  alert("Hizmetler yakında.");
+function goServices() {
+  window.location.href = "https://www.shopier.com/kraxmarket";
 }
