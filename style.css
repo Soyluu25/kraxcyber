@@ -9,6 +9,9 @@ body{
 background:radial-gradient(circle at top,#250044,#050008 65%,#000);
 color:white;
 overflow:hidden;
+
+/* 🔥 EKLENDİ: sayfa geçiş animasyonu daha smooth olsun */
+transition: 0.6s ease;
 }
 
 /* ================= INTRO ================= */
@@ -116,7 +119,7 @@ display:inline-block;
 font-size:16px;
 }
 
-/* 🔥 EXTRA FIX (mavi link + underline %100 engel) */
+/* 🔥 EXTRA FIX */
 .button,
 .button:visited,
 .button:active{
