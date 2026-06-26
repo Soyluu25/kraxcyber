@@ -18,11 +18,22 @@ window.onload = () => {
 /* NAV */
 
 function goInfo() {
+  pageTransition("info.html");
+}
+
+function goServices() {
+  pageTransition("https://www.shopier.com/kraxmarket");
+}
+
+/* 🔥 ORTAK ANİMASYON */
+function pageTransition(url) {
+
   document.body.style.transition = "0.6s ease";
   document.body.style.opacity = "0";
-  document.body.style.filter = "blur(20px)";
+  document.body.style.filter = "blur(25px)";
+  document.body.style.transform = "scale(1.1)";
 
   setTimeout(() => {
-    window.location.href = "info.html";
+    window.location.href = url;
   }, 500);
 }
