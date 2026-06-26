@@ -101,7 +101,7 @@ gap:15px;
 justify-content:center;
 }
 
-/* 🔥 BUTTON + LINK FIX */
+/* 🔥 FIX: BUTTON + LINK FULL CONTROL */
 button,
 .button{
 padding:15px 35px;
@@ -116,6 +116,15 @@ display:inline-block;
 font-size:16px;
 }
 
+/* 🔥 EXTRA FIX (mavi link + underline %100 engel) */
+.button,
+.button:visited,
+.button:active{
+color:white !important;
+text-decoration:none !important;
+}
+
+/* hover */
 button:hover,
 .button:hover{
 background:rgba(160,0,255,.35);
