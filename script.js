@@ -25,15 +25,19 @@ function goServices() {
   pageTransition("https://www.shopier.com/kraxmarket");
 }
 
-/* 🔥 ORTAK ANİMASYON */
+/* 🔥 ORTAK ANİMASYON (DÜZELTİLMİŞ) */
 function pageTransition(url) {
 
+  // animasyonun görünmesi için önce state değiştir
   document.body.style.transition = "0.6s ease";
+  document.body.style.willChange = "transform, opacity, filter";
+
   document.body.style.opacity = "0";
   document.body.style.filter = "blur(25px)";
-  document.body.style.transform = "scale(1.1)";
+  document.body.style.transform = "scale(1.05)";
 
+  // animasyonun kesin görünmesi için küçük gecikme
   setTimeout(() => {
     window.location.href = url;
-  }, 500);
+  }, 600);
 }
